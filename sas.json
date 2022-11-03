@@ -18,9 +18,9 @@
 	"heading1 comments": {
         "prefix": "coh1",
         "body": [
-            "/* ##############################################################",
+            "/* ###################################################################",
             "				$1",
-            "###############################################################*/"
+            "####################################################################*/"
         ],
         "description": "heading1 comments"
     },
@@ -34,13 +34,13 @@
         "description": "heading2 comments"
     },
 	"heading3 comments": {
-        "prefix": "coh3",
+        "prefix": "conote",
         "body": [
-            "/* -----------------------",
-            " $1",
-            "--------------------------*/"
+            "/* -------------------------------",
+            "$1",
+            "--------------------------------*/"
         ],
-        "description": "heading3 comments"
+        "description": "heading3/note comments"
     },
     "section comments": {
         "prefix": "cosc",
@@ -50,6 +50,15 @@
             "* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~;"
         ],
         "description": "section comments"
+    },
+    "MACRO": {
+        "prefix": "macro step",
+        "body": [
+            "%MACRO $1($2 = ,);",
+            "\t$3",
+            "%MEND;"
+        ],
+        "description": "macro step"
     },
     "proc format":{
         "prefix": "fmt",
