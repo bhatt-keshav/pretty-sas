@@ -60,6 +60,19 @@
         ],
         "description": "macro step"
     },
+	"%if-else": {
+        "prefix": "if-else macro",
+        "body": [
+		   "%if %$1 %then",
+			"\t%do;"
+			"\t\t$2;",
+			"run;\n%end;",
+			"%else \n\t%do;",                 
+            "\t\t$3;",
+			"run;\n%end;"      
+        ],
+        "description": "if then else macro"
+    },	
     "proc format":{
         "prefix": "fmt",
         "body":[
